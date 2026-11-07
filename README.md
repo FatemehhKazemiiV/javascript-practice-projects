@@ -1,7 +1,3 @@
-# JavaScript Practice Projects
-
-This repository contains my JavaScript learning projects, starting from beginner level.
-
 ## Projects
 
 ### 01 - Counter
@@ -14,3 +10,13 @@ Features:
 - Increase the number
 - Decrease the number
 - Reset the counter
+
+### 02 - Color Changer
+A simple color changer application built with:
+- HTML
+- CSS
+- JavaScript
+
+Features:
+- Change background to predefined colors
+- Generate random RGB colors
