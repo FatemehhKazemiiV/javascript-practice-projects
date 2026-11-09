@@ -3,6 +3,8 @@ let blueBtn = document.getElementById("blue")
 let greenBtn = document.getElementById("green")
 let yellowBtn = document.getElementById("yellow")
 let randomBtn = document.getElementById("random")
+let isDark = false
+let themeBtn = document.getElementById('theme')
 
 
 redBtn.addEventListener("click", function () {
@@ -23,9 +25,13 @@ yellowBtn.addEventListener("click", function () {
 randomBtn.addEventListener("click", function () {
     randomColor()
 })
+themeBtn.addEventListener("click", function () {
+    toggleTheme()
+})
 
 function changeColor(color) {
     document.body.style.backgroundColor = color;
+    document.body.style.color = "#222";
 }
 
 function randomColor() {
@@ -35,5 +41,20 @@ function randomColor() {
     rgb = "rgb(" + red + ", " + green + ", " + blue + ")";
 
     document.body.style.backgroundColor = rgb
+}
 
+function toggleTheme(){
+    if (isDark === false){
+        setTheme("#222","white")
+        isDark=true
+    }
+    else{
+        setTheme("white","black")
+        isDark=false
+    }
+}
+
+function setTheme(backgroundColor,textColor){
+    document.body.style.backgroundColor=backgroundColor
+    document.body.style.color=textColor
 }

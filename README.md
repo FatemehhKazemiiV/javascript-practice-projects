@@ -20,3 +20,4 @@ A simple color changer application built with:
 Features:
 - Change background to predefined colors
 - Generate random RGB colors
+- Chang the theme of background
