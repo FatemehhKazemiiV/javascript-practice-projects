@@ -1,4 +1,3 @@
-
 let guessInput = document.getElementById("guessInput");
 let guessBtn = document.getElementById("guessBtn");
 let message = document.getElementById("message");
